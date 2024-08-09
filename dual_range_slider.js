@@ -112,12 +112,12 @@ $.widget('sigmasense.dualrangeslider', {
 
         const $slidersControl = $(`<div class="sliders_control"></div>`);
         const $lowSlider = $(
-            `<input id="${this.options.name}_fromSlider" type="range" value="${this.options.fromValue}" min="${this.options.fromValue}" max="${midPoint}" />`
+            `<input class="fromSlider" id="${this.options.name}_fromSlider" type="range" value="${this.options.fromValue}" min="${this.options.fromValue}" max="${midPoint}" />`
         );
         $lowSlider.appendTo($slidersControl);
 
         const $upperSlider = $(
-            `<input id="${this.options.name}_toSlider" type="range" value="${this.options.toValue}" min="${this.options.fromValue}" max="${midPoint}" />`
+            `<input class="fromSlider" id="${this.options.name}_toSlider" type="range" value="${this.options.toValue}" min="${this.options.fromValue}" max="${midPoint}" />`
         );
         $upperSlider.appendTo($slidersControl);
 
