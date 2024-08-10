@@ -76,7 +76,6 @@ $.widget('sigmasense.dualrangeslider', {
         };
 
         const setToggleAccessible = (currentTarget) => {
-            // const toSlider = document.querySelector(`#${this.options.name}_toSlider`);
             if (Number(currentTarget.value) <= 0) {
                 toSlider.style.zIndex = 2;
             } else {
@@ -105,7 +104,6 @@ $.widget('sigmasense.dualrangeslider', {
     constructMarkup: function () {
         const $top = $('<div class="range_container"></div>');
 
-        // const midPoint = (this.options.toValue - this.options.fromValue) / 2 + this.options.fromValue / 2;
         const midPoint = this.options.toValue - this.options.fromValue;
 
         console.log(`midPoint = ${midPoint}`);
